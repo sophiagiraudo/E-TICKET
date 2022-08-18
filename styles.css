@@ -1,0 +1,471 @@
+/* GENERAL---------------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(41, 41, 41, 0.99);
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    color: #de21bc;
+    margin-top: 10px;
+    font-size: 3.1em;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    color: #de21bc;
+    margin: 30px;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #de21bc;
+}
+
+hr {
+    color: rgba(41, 41, 41, 0.99);
+}
+
+/* NAVBAR---------------------------------------- */
+.navbar {
+    background-color: white;
+}
+
+.nav-link {
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #361936;
+    padding: 0;
+}
+
+.nav-link:hover {
+    color: #de21bc;
+    text-decoration: underline;
+}
+
+.first-link {
+    color: #de21bc;
+}
+
+/* HERO------------------------------------------ */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.3)),
+        url(./img/hero.jpg);
+    background-size: cover;
+}
+
+#hero h1 {
+    color: white;
+}
+
+/*#NEXTDATES------------------------------------------ */
+.card1 {
+    margin: 35px 60px;
+    height: 370px;
+    background-image: url(./img/cardSolomun.jpg);
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+.card2 {
+    margin: 30px 60px;
+    height: 370px;
+    background-image: url(./img/cardArbatt.jpg);
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+.card3 {
+    margin: 30px 60px;
+    height: 370px;
+    background-image: url(./img/cardTaleofus.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+.card4 {
+    margin: 30px 60px;
+    height: 370px;
+    background-image: url(./img/cardFatboy.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+.car:hover {
+    transform: scale(1.05);
+}
+
+/*#TICKETS------------------------------------------ */
+.card {
+    background-color: rgba(30, 30, 30);
+    color: whitesmoke;
+    border: 2px solid rgba(30, 30, 30);
+}
+
+.btn-dark {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    border: 1px solid #de21bc;
+    box-shadow: 1.5px 1px rgba(0, 0, 0, 0.5);
+    color: rgb(30, 30, 30);
+    background-color: #de21bc;
+}
+
+.btn-dark:hover {
+    background-color: #ff00d0;
+    border: 1px solid #97187f;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+.table {
+    background-color: whitesmoke;
+}
+
+.ticketsContainer {
+    background-color: whitesmoke;
+}
+
+/*INGRESAR------------------------------------------ */
+#ingresar {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url(./img/form.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+}
+
+.container-form {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all 0.5s ease-out;
+}
+
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.message {
+    padding: 1rem;
+}
+
+.message h2 {
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.message button {
+    padding: 1rem;
+    font-weight: 400;
+    background-color: #ff00d0;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    transition: all 0.3s ease-in;
+    color: #fff;
+}
+
+.message button:hover {
+    background-color: #900075;
+}
+
+.formulario {
+    width: 500px;
+    background-color: rgb(51, 51, 51, 0.602);
+    text-align: center;
+}
+
+.create-account {
+    padding: 10px;
+    margin: 0;
+    font-size: 2.7rem;
+}
+
+.log-in {
+    padding: 20px 0;
+    margin: 10px 0;
+    font-size: 2.7rem;
+}
+
+.iconos {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.border-icon {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in;
+}
+
+.border-icon:hover {
+    background-color: #ff00d0;
+    cursor: pointer;
+}
+
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form-control {
+    background-color: transparent;
+    border: none;
+    display: flex;
+}
+
+.formulario input {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    outline: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #de21bc;
+}
+
+.formulario button {
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #222;
+}
+
+.formulario button:hover {
+    background-color: #de21bc;
+    color: white;
+    border: #de21bc;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    color: #e74c3c;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+/*FOOTER------------------------------------------ */
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (max-width: 720px) {
+
+    /*INGRESAR------------------------------------------ */
+    .sign-in {
+        position: static;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .sign-in.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .sign-up.active {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #ingresar {
+        text-align: center;
+        display: block;
+        height: auto;
+    }
+
+    .form-control {
+        display: block;
+        padding: 0;
+        font-size: 0.7rem;
+        font-weight: 100;
+        line-height: 1;
+    }
+
+    .formulario {
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .container-form {
+        width: 100%;
+        display: block;
+    }
+
+    .saludo-resp {
+        display: none;
+    }
+
+    .sign-in-btn {
+        text-align: center;
+    }
+
+    .welcome-back {
+        display: block;
+    }
+
+    .form-control .fas {
+        font-size: 18px;
+    }
+
+    .form-control small {
+        font-size: 15px;
+    }
+
+    /* NAVBAR---------------------------------------- */
+    .navbar-nav {
+        text-align: center;
+    }
+
+    /*#NEXTDATES------------------------------------------ */
+    .car {
+        height: 150px;
+    }
+
+    /*#TICKETS------------------------------------------ */
+    .nombre,
+    .fecha,
+    .lugar {
+        display: none;
+    }
+}

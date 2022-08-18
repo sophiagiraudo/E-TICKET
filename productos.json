@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "nombre": "CLAPTONE",
+        "precio": 15000,
+        "fecha": "5/11/2022",
+        "lugar": "GEBA",
+        "img": "./img/ticketClaptone.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "CATTANEO",
+        "precio": 20000,
+        "fecha": "20/8/2022",
+        "lugar": "LIVESTREAM",
+        "img": "./img/ticketCattaneo.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "SOLOMUN",
+        "precio": 10000,
+        "fecha": "18/11/2022",
+        "lugar": "CANINDÉ",
+        "img": "./img/ticketSolomun.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "ARBAT",
+        "precio": 7000,
+        "fecha": "8/5/2023",
+        "lugar": "MANDARINE",
+        "img": "./img/ticketArbat.jpeg"
+    },
+    {
+        "id": 5,
+        "nombre": "TALE OF US",
+        "precio": 6000,
+        "fecha": "19/3/2022",
+        "lugar": "MANDARINE",
+        "img": "./img/ticketTaleofus.jpeg"
+    },
+    {
+        "id": 6,
+        "nombre": "FATBOY",
+        "precio": 5000,
+        "fecha": "4/12/2022",
+        "lugar": "LA ESTACION",
+        "img": "./img/ticketFatboy.jpeg"
+    }
+]
