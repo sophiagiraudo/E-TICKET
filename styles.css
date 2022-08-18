@@ -468,4 +468,11 @@ footer .container {
     .lugar {
         display: none;
     }
+
+    /*FOOTER------------------------------------------ */
+    footer .container {
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+    }
 }
