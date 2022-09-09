@@ -43,7 +43,7 @@ items.addEventListener("click", (e) => {
 const pintarCards = (data) => {
     data.forEach((producto) => {
         templateCard.querySelector("h3").textContent = producto.nombre;
-        templateCard.querySelector("p.precio").textContent = `$${producto.precio}`;
+        templateCard.querySelector("p.precio").textContent = producto.precio;
         templateCard.querySelector("p.fecha").textContent = producto.fecha;
         templateCard.querySelector("p.lugar").textContent = producto.lugar;
         templateCard.querySelector("img").setAttribute("src", producto.img);
@@ -95,7 +95,7 @@ const pintarCarrito = () => {
         templateCarrito.querySelector(".btn-info").dataset.id = producto.id;
         templateCarrito.querySelector(".btn-danger").dataset.id = producto.id;
         templateCarrito.querySelector("span").textContent =
-            producto.cantidad * producto.precio;
+            producto.precio;
 
         const clone = templateCarrito.cloneNode(true);
         fragment.appendChild(clone);
@@ -122,6 +122,7 @@ const pintarFooter = () => {
         (acc, { cantidad, precio }) => acc + cantidad * precio,
         0
     );
+
 
     templateFooter.querySelectorAll("td")[0].textContent = nCantidad;
     templateFooter.querySelector("span").textContent = nPrecio;
