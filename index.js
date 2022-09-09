@@ -95,7 +95,7 @@ const pintarCarrito = () => {
         templateCarrito.querySelector(".btn-info").dataset.id = producto.id;
         templateCarrito.querySelector(".btn-danger").dataset.id = producto.id;
         templateCarrito.querySelector("span").textContent =
-            producto.precio;
+            producto.precio*producto.cantidad;
 
         const clone = templateCarrito.cloneNode(true);
         fragment.appendChild(clone);
